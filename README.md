@@ -43,9 +43,11 @@ Open the URL and click on generate.
  ![image](https://user-images.githubusercontent.com/29029753/41242316-cbac7d0a-6dbc-11e8-89a1-262093c37df5.png)
  
 Then copy the content as save them with notepad.
+
 Copy Private Key and Save As devops.pem in home directory.
     ![image](https://user-images.githubusercontent.com/29029753/41242599-a108fa28-6dbd-11e8-938d-e094f2fc161a.png)
     ![image](https://user-images.githubusercontent.com/29029753/41242694-d4b4b7c2-6dbd-11e8-8d52-08e4176de342.png)
+    
 Copy Public Key and Save As devops.pub in home directory.
     ![image](https://user-images.githubusercontent.com/29029753/41242755-fedeba70-6dbd-11e8-827a-c5ed69daa073.png)
     ![image](https://user-images.githubusercontent.com/29029753/41242811-20edba76-6dbe-11e8-9442-b500cb19f1cd.png)
@@ -63,6 +65,7 @@ Then open GitBash icon from StartMenu.
 
 Run the following commands in the same sequence.
 ![image](https://user-images.githubusercontent.com/29029753/41243324-7e0ebfec-6dbf-11e8-8e21-b851505bde47.png)
+
 ```
 $ rm -rf devops*
 $ ssk-keygen -q -f devops -N ''
@@ -72,6 +75,7 @@ $ mv devops devops.pem
 You need to configure google cloud in order to access with the key which are generated with step.
 
 ####    a. Setup Firewall.
+
 Goto firewall rules under VPC network. 
 ![image](https://user-images.githubusercontent.com/29029753/41243706-7812362c-6dc0-11e8-85ef-77de139342af.png)
 ![image](https://user-images.githubusercontent.com/29029753/41243752-9c4943a0-6dc0-11e8-9b25-af4c1ea2a474.png)
