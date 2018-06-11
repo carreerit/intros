@@ -94,3 +94,34 @@ Add/Change the following parameters to add new.
     
 Then click on __**Create**__
 
+#### b. Upload SSH Public Key.
+
+Open the saved devops.pub file in your home directory which was done in previous step and copy that to google cloud.
+
+Go to **Compute Engine**
+
+![image](https://user-images.githubusercontent.com/29029753/41244846-f6797270-6dc3-11e8-8bfa-7db881b6a9e5.png)
+
+Then **SSH Keys** and then click on **Add SSK keys**
+Copy the content of `devops.pub` file from you local PC to this using notepad. Open the file with notepad and paste it over here.
+
+![image](https://user-images.githubusercontent.com/29029753/41245033-83a58b34-6dc4-11e8-9032-4a8df2dad263.png)
+
+But there is 3 coloums in that content for which you need to replace the last coloum with `ec2-user`
+
+Then click on **Save**
+
+
+Thats all your account setup is completed.. But you need to setup few tools which are listed in next steps.
+
+
+### 5. Install tools. (For Windows)
+
+1. Xshell: https://www.netsarang.com/download/down_xsh6.html
+2. Xftp: https://www.netsarang.com/download/down_xfp6.html
+3. Visual Studio Code: https://code.visualstudio.com/Download
+
+Configure these as shown in demo.. Then you are all set... :)
+
+
+
