@@ -38,8 +38,10 @@ You can generate the keys (SSH Keys Private and Public) in two ways.
 ####    a. From Web tools
 You can generate Public Keys and Private Keys in the following URL.
 https://qsandbox.com/tools/private-public-keygen
+
 Open the URL and click on generate.
  ![image](https://user-images.githubusercontent.com/29029753/41242316-cbac7d0a-6dbc-11e8-89a1-262093c37df5.png)
+ 
 Then copy the content as save them with notepad.
 Copy Private Key and Save As devops.pem in home directory.
     ![image](https://user-images.githubusercontent.com/29029753/41242599-a108fa28-6dbd-11e8-938d-e094f2fc161a.png)
@@ -52,10 +54,13 @@ Copy Public Key and Save As devops.pub in home directory.
 You need to download this tool based on your architecuture.
 
 32 bit: https://github.com/git-for-windows/git/releases/download/v2.17.1.windows.2/Git-2.17.1.2-32-bit.exe
+
 64 bit: https://github.com/git-for-windows/git/releases/download/v2.17.1.windows.2/Git-2.17.1.2-64-bit.exe
+
 Install with default options.
 Then open GitBash icon from StartMenu.
 ![image](https://user-images.githubusercontent.com/29029753/41243174-2aa5c454-6dbf-11e8-8f8c-69afd4c39c33.png)
+
 Run the following commands in the same sequence.
 ![image](https://user-images.githubusercontent.com/29029753/41243324-7e0ebfec-6dbf-11e8-8e21-b851505bde47.png)
 ```
@@ -70,6 +75,7 @@ You need to configure google cloud in order to access with the key which are gen
 Goto firewall rules under VPC network. 
 ![image](https://user-images.githubusercontent.com/29029753/41243706-7812362c-6dc0-11e8-85ef-77de139342af.png)
 ![image](https://user-images.githubusercontent.com/29029753/41243752-9c4943a0-6dc0-11e8-9b25-af4c1ea2a474.png)
+
 Add/Change the following parameters to add new.
     <b><b>Name</b></b>: `all`
     <b><b>Targets</b></b>: `All instances in the network`
