@@ -83,9 +83,14 @@ Goto firewall rules under VPC network.
 ![image](https://user-images.githubusercontent.com/29029753/41243752-9c4943a0-6dc0-11e8-9b25-af4c1ea2a474.png)
 
 Add/Change the following parameters to add new.
+
     <b><b>Name</b></b>: `all`
+    
     <b><b>Targets</b></b>: `All instances in the network`
+    
     <b><b>Source IP ranges</b></b>: `0.0.0.0/0`
+    
     <b><b>Protocols and ports</b></b>: `Allow all`    
+    
 Then click on <b><u>Create></b></u>
 
