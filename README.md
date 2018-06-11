@@ -84,10 +84,10 @@ Goto firewall rules under VPC network.
 
 Add/Change the following parameters to add new.
 
-<b><b>Name</b></b>: `all`
-<b><b>Targets</b></b>: `All instances in the network`
-<b><b>Source IP ranges</b></b>: `0.0.0.0/0`
-<b><b>Protocols and ports</b></b>: `Allow all`    
+-> <b><b>Name</b></b>: `all`
+-> <b><b>Targets</b></b>: `All instances in the network`
+-> <b><b>Source IP ranges</b></b>: `0.0.0.0/0`
+-> <b><b>Protocols and ports</b></b>: `Allow all`    
     
 Then click on <b><u>Create></b></u>
 
