@@ -77,7 +77,9 @@ You need to configure google cloud in order to access with the key which are gen
 ####    a. Setup Firewall.
 
 Goto firewall rules under VPC network. 
+
 ![image](https://user-images.githubusercontent.com/29029753/41243706-7812362c-6dc0-11e8-85ef-77de139342af.png)
+
 ![image](https://user-images.githubusercontent.com/29029753/41243752-9c4943a0-6dc0-11e8-9b25-af4c1ea2a474.png)
 
 Add/Change the following parameters to add new.
