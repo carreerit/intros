@@ -102,7 +102,7 @@ Go to **Compute Engine**
 
 ![image](https://user-images.githubusercontent.com/29029753/41244846-f6797270-6dc3-11e8-8bfa-7db881b6a9e5.png)
 
-Then **SSH Keys** and then click on **Add SSK keys**
+Then **SSH Keys** and then click on **Add SSH keys**
 Copy the content of `devops.pub` file from you local PC to this using notepad. Open the file with notepad and paste it over here.
 
 ![image](https://user-images.githubusercontent.com/29029753/41245033-83a58b34-6dc4-11e8-9032-4a8df2dad263.png)
