@@ -109,6 +109,8 @@ Copy the content of `devops.pub` file from you local PC to this using notepad. O
 
 But there is 3 coloums in that content for which you need to replace the last coloum with `ec2-user`
 
+![image](https://user-images.githubusercontent.com/29029753/41245341-6d97da3a-6dc5-11e8-859b-20df069b46e2.png)
+
 Then click on **Save**
 
 
