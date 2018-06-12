@@ -68,7 +68,7 @@ Run the following commands in the same sequence.
 
 ```
 $ rm -rf devops*
-$ ssk-keygen -q -f devops -N ''
+$ ssh-keygen -q -f devops -N ''
 $ mv devops devops.pem
 ```
 ### 4. Setup Google Cloud.     
