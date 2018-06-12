@@ -6,7 +6,7 @@ Intro command to get h/w and s/w info.
 
 -> Check your machine is 32 bit or 64 bit
 
-    If the answer comes as 
+   If the answer comes as 
         x86/ i386/ i586/ i686 -> 32 bit
         x86_64  -> 64 bit
        
