@@ -9,7 +9,7 @@ Intro command to get h/w and s/w info.
         x86/ i386/ i586/ i686 -> 32 bit
         x86_64  -> 64 bit
        
-    Command: `uname -p`
+   Command: `uname -p`
     
 -> Which Operating System you are using ??
     Run the command : `cat /etc/*release`
