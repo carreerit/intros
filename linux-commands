@@ -117,5 +117,68 @@ EDITORS:
     ** gedit
     ** nano  
 
-Pipes:
+Finding Files:
+    -> Finding the files can be done with "find" command.
+        Syntax: find <location> <criteria> 
+        Ex: find / -name sample.conf
+            find /boot -type d 
+            find / -name xyz -type d
+            find / -name xyz -type f
+            find / -name "*.conf"
+            
+    -> Finding the files can be done also with "locate" command (Only in Redhat family)
+       By default that package (software) is not available by default.
+       In order to install it just follow the following commands.
+        $ sudo yum install mlocate -y 
+        $ sudo updatedb 
+        
+       Now you can find the files using locate command.
+        $ locate "*.conf"
+        
 Utilties:
+       -> Downloading the files can be done with "wget" command.
+          By default wget command is not installed in your system.
+          
+          $ sudo yum install wget -y 
+          
+          Now you can download the file using wget.
+          Syntax: wget <URL>
+          
+          
+       -> Browsing over command line
+          $ curl <URL>
+          
+          Also, You can download the files with curl command.
+          $ curl URL -o filename
+          
+       -> Compression Utilities.
+           -> Extract a tar file.
+              $ tar -xf file.tar.gz / file.tar
+              
+            tar does not apply compression it is only a packing tool to create a file from multiple files and directories.
+            But the compression is applied with 
+                gunzip  -> .gz
+                bunzip2 -> .bz2
+           
+           -> TRY THIS AS TASK 
+              Create a tar file with .gz and .bz2 extension
+              By default bunzip2 is not installed 
+              $ sudo yum install bzip2 -y
+             
+Pipes: (|)
+    Pipes will convert STDOUT to STDIN
+
+Process Management:
+   -> Every command you execute will create a PID (Process ID , which is unique)
+    To list out all the process we are going to use "ps" command.
+    Every process is going to have a parent process ID.
+    
+
+Admin topics:
+1. User management
+2. Package management
+3. Service management
+4. Network management
+5. Disk management (Just intro)
+6. File permissions
+
