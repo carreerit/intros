@@ -168,6 +168,20 @@ Utilties:
 Pipes: (|)
     Pipes will convert STDOUT to STDIN
 
+Restart /Shutdown:
+  Restart:
+    $ sudo init 6
+    $ sudo reboot
+    $ sudo shutdown -r now
+    
+  Shutdown:
+    $ sudo init 0
+    $ sudo halt
+    $ sudo shutdown -h now
+    
+  -> To verify whether the system is rebooted or not. 
+    $ uptime
+    
 Process Management:
    -> Every command you execute will create a PID (Process ID , which is unique)
     To list out all the process we are going to use "ps" command.
@@ -175,9 +189,78 @@ Process Management:
     
 
 Admin topics:
+
+All admins activities cannot be performed by a normal users. You need to be a root user to perform the tasks.
+Root logins are not allowed in companies and we alternatively use sudo to gain access and perform activities.
+
+All the commands we are going to perform we will add sudo to starting of the command.
+
+$ sudo <command>
+  The above command will be executed as a root user and also it will be logged in the system.
+  
 1. User management
+   In RedHat Linux, to add a user it is mandatory to have a group.
+   
+   Groups:
+     -> To add a group , Use the following
+        $ sudo groupadd demo
+        
+     -> To check whether the group is added or not , we can use the following command.
+        $ cat /etc/group | grep demo
+        
+        Del Group: groupdel
+        Modify Group: groupmod
+       
+   Users:
+     -> TO create a user, use the following.
+        $ sudo useradd -g demo raju
+        
+     -> To check whether the user is added or not 
+        $ id raju
+        $ cat /etc/passwd | grep raju
+        
+     -> Add user to other groups. 
+        $ sudo usermod -a -G adm raju
+        
+     -> To set a password to raju user
+        $ sudo passwd raju
+        
+     -> To swtich from one user to another user then use "su"
+        $ su -  raju
+
+  Sudoers:
+     -> To add raju user to execute commands as root user 
+        $ sudo visudo
+        
 2. Package management
-3. Service management
+     -> Redhat used RPM (RPM Package manager formerly called as Redhat Package Manager), it is like .exe 
+        $ sudo yum list installed
+        $ sudo yum list available
+        $ sudo yum list (or) $ sudo yum list all
+        $ sudo yum install zip -y
+        $ sudo yum remove zip -y
+        $ sudo yum update zip -y
+        
+3. Service management.
+     -> To manage the services we have "systemctl" in centos7 OS, where as we use to have "service" command earlier on centos 6.
+     -> To list all services which are active.
+        $ sudo systemctl list-units -t service 
+     -> To list all services which includes inactive.
+        $ sudo systemctl list-units -t service --all
+        
+     -> TO start/stop/restart a service.
+        $ sudo systemctl start httpd
+        $ sudo systemctl stop httpd
+        $ sudo systemctl restart httpd
+        
+     -> To check the status of httpd.
+        $ sudo systemctl status httpd
+        
+     -> To start the service at the time of reboot automatically then 
+        $ sudo systemctl enable httpd
+        $ sudo systemctl disable httpd
+
+        
 4. Network management
 5. Disk management (Just intro)
 6. File permissions
