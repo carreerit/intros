@@ -262,6 +262,36 @@ $ sudo <command>
 
         
 4. Network management
+    -> Info about IP address.
+      $ ip a
+      
+    -> Server name information.
+      $ hostname
+      $ hostname -f 
+      
+    -> Port Info
+      Every IP is going to have ports from 0-65535 
+      $ sudo netstat -lntp 
+      
 5. Disk management (Just intro)
+    -> To check the disks on the server
+      $ sudo fdisk -l
+      
+    -> To check the mounted file systems
+      $ mount
+      $ df -h
+     In order to access the disk we need to mount it.
+     
 6. File permissions
-
+  -> Ownerships
+    Owner:
+       $ sudo chown username filename
+    Group Owner:
+       $ sudo chgrp username filename
+       
+       $ sudo chown username:groupname file
+       $ sudo chown username:groupname directory -R
+    
+  -> Permissions
+     $ chmod u+x file 
+     $ chmod o-r file 
