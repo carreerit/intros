@@ -1,10 +1,17 @@
+## Tools to Install.
+1. GitBash (https://git-scm.com/download/win)
+2. XShell (https://www.netsarang.com/download/down_form.html?code=622)
+3. XFtp (https://www.netsarang.com/download/down_form.html?code=623)
+4. Visual Studio Code (https://code.visualstudio.com/)
+
+
+
 ## Lab Setup.
 Lab setup includes the following tasks needs to be performed.
 1. Create Google Cloud Account.
-2. Create Amazon Web Services Account.
-3. Generate keys.
-4. Setup Google Cloud.
-5. Install tools. (For Windows)
+2. Generate keys.
+3. Setup Google Cloud.
+4. Install tools. (For Windows)
 
 ### 1. Create Google Cloud Account.
 
@@ -24,14 +31,7 @@ From there you can navigate to `Compute Engine` to create servers.
 
 We will come back and create the servers in upcoming section.
 
-### 2. Create Amazon Web Services Account.
-
-Our course includes AWS topics too are going to be covered. So you do require a AWS account also. Please try to SignUP for AWS also.
-Refer the following link to create an account.
-
-https://www.youtube.com/watch?v=ux1T3j6_MXc
-
-### 3. Generate keys.
+### 2. Generate keys.
 
 You can generate the keys (SSH Keys Private and Public) in two ways.
     
@@ -71,7 +71,7 @@ $ rm -rf devops*
 $ ssh-keygen -q -f devops -N ''
 $ mv devops devops.pem
 ```
-### 4. Setup Google Cloud.     
+### 3. Setup Google Cloud.     
 You need to configure google cloud in order to access with the key which are generated with step.
 
 ####    a. Setup Firewall.
@@ -117,11 +117,6 @@ Then click on **Save**
 Thats all your account setup is completed.. But you need to setup few tools which are listed in next steps.
 
 
-### 5. Install tools. (For Windows)
-
-1. Xshell: https://www.netsarang.com/download/down_xsh6.html
-2. Xftp: https://www.netsarang.com/download/down_xfp6.html
-3. Visual Studio Code: https://code.visualstudio.com/Download
 
 Configure these as shown in demo.. Then you are all set... :)
 
