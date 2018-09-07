@@ -116,6 +116,8 @@ EDITORS:
     ** vi / vim (so widely used)
     ** gedit
     ** nano  
+    
+![image](https://user-images.githubusercontent.com/29029753/45194060-03394900-b26f-11e8-91dd-ed425680abe7.png)
 
 Finding Files:
     -> Finding the files can be done with "find" command.
